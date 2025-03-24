@@ -1,0 +1,107 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance - D3 Solutions</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000000;
+            font-family: "Raleway", sans-serif;
+            color: #0e0e0f;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .header {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 38px;
+            color: #f2e8e8f0;
+            font-family: "fantasy";
+        }
+        .maintenance {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            opacity: 0.8;
+            z-index: -1;
+        }
+        .maintenance img {
+            max-width: 65%;
+            height: auto;
+            margin-bottom: 30px;
+            transform: translateY(-20px);
+        }
+        .title img {
+            max-width: 90%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 32px;
+            font-weight: 600;
+            color: #f0ecec;
+            margin-top: 15px;
+        }
+        .message {
+            font-size: 24px;
+            font-weight: 500;
+            color: #817c7c;
+            margin-top: 15px;
+        }
+        .contact {
+            font-size: 20px;
+            font-weight: 500;
+            color: #ffffff;
+            margin-top: 25px;
+        }
+        .contact a {
+            color: #c3c49a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .title img { max-width: 70%; }
+            .subtitle { font-size: 28px; }
+            .message { font-size: 22px; }
+            .maintenance img { max-width: 80%; margin-bottom: 20px; transform: translateY(-15px); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="maintenance">
+        <div class="background"></div>
+        <div class="title">
+            <img src="ch.png" alt="Chitera">
+        </div><br>
+        <img src="https://demo.wpbeaveraddons.com/wp-content/uploads/2018/02/main-vector.png" alt="Maintenance">
+        <div class="subtitle">We are under maintenance</div>
+        <div class="message">We will be back soon.</div>
+        <div class="contact">For orders and queries, contact us at 
+            <a href="mailto:deethreesolutions@gmail.com">deethreesolutions@gmail.com</a> or call 
+            <a href="tel:93456789">+919352244381</a>.
+        </div>
+    </div>
+</body>
+</html>
